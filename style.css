@@ -1,61 +1,122 @@
 /* style.css */
 
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #004494;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
 }
 
 .profile-img {
     display: block;
     margin: 20px auto;
-    width: 150px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 5px solid #007bff;
 }
 
-h1, h2 {
-    text-align: center;
-}
-
-.about, .skills, .contact {
+.section {
     background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 2em;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.skills ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-ul li {
-    background: #ddd;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+.skills ul li {
+    background: #e9ecef;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contact a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
+    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
-    margin-top: 20px;
+    font-size: 1.1em;
+    border-top: 5px solid #004494;
+    margin-top: 30px;
 }
